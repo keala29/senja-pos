@@ -93,3 +93,14 @@ function todayRange() {
   const end = new Date(start); end.setHours(23,59,59,999);
   return { start: firebase.firestore.Timestamp.fromDate(start), end: firebase.firestore.Timestamp.fromDate(end) };
 }
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDshg22ADFTHo9tKlBjfm0vlwyQuf0HArk",
+  authDomain: "senja-88d6e.firebaseapp.com",
+  projectId: "senja-88d6e",
+  storageBucket: "senja-88d6e.firebasestorage.app",
+  messagingSenderId: "527579593279",
+  appId: "1:527579593279:web:07b5ad54d414755a05168a",
+  measurementId: "G-SVHDYE6YX3"
+};
