@@ -87,33 +87,13 @@ async function activeShift() {
   return best ? best.s : null;
 }
 
-/* Rentang waktu "hari ini" (dipakai berkali-kali untuk laporan/riwayat) */
-function todayRange() {
-  const start = new Date(); start.setHours(0,0,0,0);
-  const end = new Date(start); end.setHours(23,59,59,999);
-  return { start: firebase.firestore.Timestamp.fromDate(start), end: firebase.firestore.Timestamp.fromDate(end) };
-}
-
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAn8i2R6ywmRkd0THeYg3szolnRYUHr7Rs",
-    authDomain: "keala-46390.firebaseapp.com",
-    projectId: "keala-46390",
-    storageBucket: "keala-46390.firebasestorage.app",
-    messagingSenderId: "932149282305",
-    appId: "1:932149282305:web:bdb0d482bd2f78f6306200",
-    measurementId: "G-1J6SLLWDVE"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAn8i2R6ywmRkd0THeYg3szolnRYUHr7Rs",
+  authDomain: "keala-46390.firebaseapp.com",
+  projectId: "keala-46390",
+  storageBucket: "keala-46390.firebasestorage.app",
+  messagingSenderId: "932149282305",
+  appId: "1:932149282305:web:bdb0d482bd2f78f6306200",
+  measurementId: "G-1J6SLLWDVE"
+};
