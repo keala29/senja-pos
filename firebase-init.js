@@ -89,11 +89,11 @@ async function activeShift() {
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAn8i2R6ywmRkd0THeYg3szolnRYUHr7Rs",
-  authDomain: "keala-46390.firebaseapp.com",
-  projectId: "keala-46390",
-  storageBucket: "keala-46390.firebasestorage.app",
-  messagingSenderId: "932149282305",
-  appId: "1:932149282305:web:bdb0d482bd2f78f6306200",
-  measurementId: "G-1J6SLLWDVE"
+  apiKey: "AIzaSyCT3kSBaSu4HMuChdAa4rbsIMbN3zNMTak",
+  authDomain: "boss-123a1.firebaseapp.com",
+  projectId: "boss-123a1",
+  storageBucket: "boss-123a1.firebasestorage.app",
+  messagingSenderId: "298957574596",
+  appId: "1:298957574596:web:1ec5b579218fccd42f9491",
+  measurementId: "G-HX20NWQENF"
 };
