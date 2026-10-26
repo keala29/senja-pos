@@ -87,6 +87,12 @@ async function activeShift() {
   return best ? best.s : null;
 }
 
+/* Rentang waktu "hari ini" (dipakai berkali-kali untuk laporan/riwayat) */
+function todayRange() {
+  const start = new Date(); start.setHours(0,0,0,0);
+  const end = new Date(start); end.setHours(23,59,59,999);
+  return { start: firebase.firestore.Timestamp.fromDate(start), end: firebase.firestore.Timestamp.fromDate(end) };
+}
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCT3kSBaSu4HMuChdAa4rbsIMbN3zNMTak",
