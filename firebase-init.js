@@ -94,13 +94,26 @@ function todayRange() {
   return { start: firebase.firestore.Timestamp.fromDate(start), end: firebase.firestore.Timestamp.fromDate(end) };
 }
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDshg22ADFTHo9tKlBjfm0vlwyQuf0HArk",
-  authDomain: "senja-88d6e.firebaseapp.com",
-  projectId: "senja-88d6e",
-  storageBucket: "senja-88d6e.firebasestorage.app",
-  messagingSenderId: "527579593279",
-  appId: "1:527579593279:web:07b5ad54d414755a05168a",
-  measurementId: "G-SVHDYE6YX3"
-};
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAn8i2R6ywmRkd0THeYg3szolnRYUHr7Rs",
+    authDomain: "keala-46390.firebaseapp.com",
+    projectId: "keala-46390",
+    storageBucket: "keala-46390.firebasestorage.app",
+    messagingSenderId: "932149282305",
+    appId: "1:932149282305:web:bdb0d482bd2f78f6306200",
+    measurementId: "G-1J6SLLWDVE"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
